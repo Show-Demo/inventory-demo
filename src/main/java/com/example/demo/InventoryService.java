@@ -33,7 +33,7 @@ public class InventoryService {
             return false;
         }
         if (available < quantity) {
-            logger.error("库存不足：商品 {} 需要 {} 件，但仅有 {} 件", itemId, quantity, available);
+            logger.error("库存不足:商品 {} 需要 {} 件，但仅有 {} 件", itemId, quantity, available);
             return false;
         }
         return true;
